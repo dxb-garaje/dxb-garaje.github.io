@@ -1,0 +1,10 @@
+:root{--bg:#0b0b0c;--card:#16161a;--line:#2a2722;--ink:#efe9dd;--mut:#a8a196;--dim:#7d776f;--oro:#d9ab4a;--verde:#3fbf6f;--ambar:#e0a43a;--rojo:#e05a4a}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);font-family:-apple-system,Segoe UI,system-ui,Arial,sans-serif;font-size:16px}
+#candado{position:fixed;inset:0;z-index:20;background:radial-gradient(ellipse at 50% 30%,#221c10,#0b0b0c 65%);display:flex;align-items:center;justify-content:center;padding:24px}
+#candado .caja{width:100%;max-width:340px;text-align:center}#candado img{width:120px;height:120px}#candado b{display:block;font-size:26px;margin-top:6px;letter-spacing:1px}
+#candado p{color:var(--mut);margin:6px 0 18px}#candado input{text-align:center;letter-spacing:2px;width:100%;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:12px;font:inherit;font-size:16px}
+#candado-error{color:var(--rojo)!important;min-height:20px}
+#candado .prim{width:100%;margin-top:18px;background:var(--oro);color:#161208;border:none;font-weight:700;font-size:17px;padding:15px;border-radius:12px;font-family:inherit;cursor:pointer}
+#candado .enlace{background:none;border:none;color:var(--oro);font-size:15px;margin-top:12px;text-decoration:underline;width:100%;font-family:inherit;cursor:pointer}
+#candado .ayuda{font-size:13px;line-height:1.45}
