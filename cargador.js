@@ -81,6 +81,7 @@
     const estilo = document.createElement("style"); estilo.textContent = paquete.css; document.head.appendChild(estilo);
     $("app").innerHTML = paquete.html; // marcado propio, sale del paquete cifrado
     window.REGLAS = paquete.reglas;
+    window.APP_VERSION = paquete.version;
     for (const src of paquete.librerias || []) await cargarScript(src);
     for (const codigo of paquete.js) { const s = document.createElement("script"); s.textContent = codigo; document.body.appendChild(s); }
     abierta = true; paso(null);
