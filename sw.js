@@ -1,7 +1,7 @@
 /* Guarda la app en el teléfono para que abra sin cobertura (en el showroom).
    Siempre intenta la versión nueva primero; si no hay red, usa la guardada. */
-const CACHE = "dxb-garaje-v8";
-const ARCHIVOS = ["./", "index.html", "cargador.js", "cargador.css", "app.cifrada.js", "manifest.webmanifest", "logo.png", "icono-180.png", "icono-512.png", "lib/zxing.min.js", "lib/tesseract.min.js", "lib/jspdf.umd.min.js"];
+const CACHE = "dxb-garaje-v9";
+const ARCHIVOS = ["./", "index.html", "cargador.js", "cargador.css", "app.cifrada.js", "manifest.webmanifest", "logo.png", "icono-180.png", "icono-512.png", "lib/zxing.min.js", "lib/tesseract.min.js", "lib/jspdf.umd.min.js", "lib/pdf-lib.min.js"];
 
 self.addEventListener("install", (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ARCHIVOS))); self.skipWaiting(); });
 self.addEventListener("activate", (e) => {
