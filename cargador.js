@@ -83,6 +83,7 @@
     window.REGLAS = paquete.reglas;
     window.APP_VERSION = paquete.version;
     window.BUSQUEDA = paquete.busqueda || null;
+    window.SYNC = paquete.sync || null; // llave de los datos compartidos con los socios (solo dentro del paquete cifrado)
     for (const src of paquete.librerias || []) await cargarScript(src);
     for (const codigo of paquete.js) { const s = document.createElement("script"); s.textContent = codigo; document.body.appendChild(s); }
     abierta = true; paso(null);
