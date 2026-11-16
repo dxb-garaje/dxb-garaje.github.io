@@ -2,3 +2,4 @@ Librerías de terceros incluidas en la app (se ejecutan en el teléfono, sin red
 - tesseract.js 5.1.1 y tesseract.js-core 5.1.1 — Apache-2.0 — https://github.com/naptha/tesseract.js
 - @tesseract.js-data/eng 1.0.0 (eng 4.0.0_best_int) — Apache-2.0
 - @zxing/library 0.21.3 — MIT — https://github.com/zxing-js/library
+- jsPDF 4.2.1 — MIT — https://github.com/parallax/jsPDF (solo crea el PDF de facturas dentro del teléfono; no se usan sus funciones de carga por red)
